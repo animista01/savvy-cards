@@ -1,0 +1,23 @@
+<ion-view>
+	<div class="bar bar-header bar-positive">
+	  <h1 class="title">Savvy</h1>
+	</div>
+	<ion-content class="has-header">
+		<form ng-submit="login(loginData)">
+			<div class="list">
+		    	<label class="item item-input item-floating-label">
+			    	<span class="input-label">Email</span>
+			    	<input type="text" ng-model="loginData.email" placeholder="Email" required>
+			  	</label>
+			  	<label class="item item-input item-floating-label">
+			    	<span class="input-label">Contraseña</span>
+			    	<input type="password" ng-model="loginData.password" placeholder="Contraseña" required>
+			  	</label>
+			  	<label class="item">
+		          	<button class="button button-block button-calm" type="submit">Log in</button>
+	        	</label>
+			</div>
+		</form>
+  		<a class="button button-clear button-balanced" href="#/signup">Sign up</a>
+	</ion-content>
+</ion-view>

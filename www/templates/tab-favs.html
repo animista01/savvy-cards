@@ -1,0 +1,9 @@
+<ion-view title="Favs">
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item ng-repeat="fav in favs" type="item-text-wrap" href="#/tab/fav/{{fav.id}}">
+        {{fav.name}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

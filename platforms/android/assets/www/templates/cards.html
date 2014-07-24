@@ -1,0 +1,27 @@
+<ion-view no-scroll>
+  <ion-pane style="background: #333">
+   	  <div class="bar bar-header bar-transparent">
+		<h1 class="title">Promociones</h1>
+	  	<a class="button button-positive icon ion-person" href="#/tab/history"></a>
+	  </div>
+
+	  <swipe-cards>
+	    <swipe-card on-swipe="cardSwiped()" on-destroy="cardDestroyed($index)" id="start-card">
+	      Desliza hacia abajo para una nueva promoción
+	    </swipe-card>
+	    <swipe-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index)">
+	      <div>
+	        <div class="title">
+	          {{card.p_name}}
+	        </div>
+	        <div class="image">
+	          <img src="http://192.168.1.5:3001/{{card.p_image}}">
+	        </div>
+	        <div class="button-bar">
+	          <a class="button button-clear icon ion-plus button-positive" href="#/card/{{card.p_id}}"> Mas info</a>
+	        </div>
+	      </div>
+	    </swipe-card>
+	  </swipe-cards>
+  </ion-pane>
+</ion-view>

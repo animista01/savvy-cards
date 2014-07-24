@@ -1,0 +1,287 @@
+/* Empty. Add your own CSS if you like */
+/* Your app's CSS, go crazy, make it your own */
+@-webkit-keyframes animate {
+    0% {
+        -webkit-transform: rotate(0deg);
+   }
+   100% {
+       -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes animate {
+    0% {
+        -moz-transform: rotate(0deg);
+   }
+   100% {
+       -moz-transform: rotate(360deg);
+  }
+}
+@-o-keyframes animate {
+    0% {
+        -o-transform: rotate(0deg);
+   }
+   100% {
+       -o-transform: rotate(360deg);
+  }
+}
+@keyframes animate {
+    from {
+        transform: rotate(0deg);
+   }
+   to {
+       transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes brillos {
+    0% {
+        left: 26%;
+   }
+   50% {
+       left: 36%;
+  }
+  100% {
+      left: 26%;
+ }
+}
+@-moz-keyframes brillos {
+    0% {
+        left: 26%;
+   }
+   50% {
+       left: 36%;
+  }
+  100% {
+      left: 26%;
+ }
+}
+@-o-keyframes brillos {
+    0% {
+        left: 26%;
+   }
+   50% {
+       left: 36%;
+  }
+  100% {
+      left: 26%;
+ }
+}
+@keyframes brillos {
+    0% {
+        left: 26%;
+   }
+   50% {
+       left: 36%;
+  }
+  100% {
+      left: 26%;
+ }
+}
+#capa-1, #capa-2, #capa-3, #capa-4, #capa-5, #capa-6 {
+    width: 100%;
+}
+#capa-2, #capa-3, #capa-4, #capa-5, #capa-6 {
+    position: absolute;
+    top: 0;
+}
+#capa-2 {
+    top: 22%;
+    left: 16%;
+}
+#capa-3 {
+    top: 55.5%;
+    left: 26%;
+}
+#capa-4 {
+    top: 54%;
+    left: 24%;
+}
+#capa-5 {
+    top: 22%;
+    left: 16%;
+}
+#button-search {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 70%;
+    position: relative;
+}
+#capa-1 img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#capa-2 img {
+    display: block;
+    width: 65%;
+    height: auto;
+}
+#capa-3 img {
+    display: block;
+    width: 38%;
+    height: auto;
+}
+#capa-4 img {
+    display: block;
+    width: 53%;
+    height: auto;
+}
+#capa-5 img {
+    display: block;
+    width: 6%;
+    height: auto;
+}
+.animated {
+    /*animation-name*/
+-webkit-animation-name: animate;
+    -moz-animation-name: animate;
+    -ms-animation-name: animate;
+    -o-animation-name: animate;
+    animation-name: animate;
+    /*animation-duration*/
+-webkit-animation-duration: 5s;
+    -moz-animation-duration: 5s;
+    -ms-animation-duration: 5s;
+    -o-animation-duration: 5s;
+    animation-duration: 5s;
+    /*animation-iteration-count*/
+-webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    /*animation-timing-function*/
+-webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+#capa-3 {
+    /*animation-name*/
+-webkit-animation-name: brillos;
+    -moz-animation-name: brillos;
+    -ms-animation-name: brillos;
+    -o-animation-name: brillos;
+    animation-name: brillos;
+    /*animation-duration*/
+-webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+    /*animation-iteration-count*/
+-webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    /*animation-timing-function*/
+-webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+body{
+  background: url('../img/bgblue.png');
+  background-repeat:no-repeat;
+}
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+/*.pane {
+  background-color: #333;
+}
+*/
+.bar.bar-transparent {
+  background-color: transparent;
+  background-image: none;
+  border: none;
+}
+
+.bar .title {
+  color: #eee;
+}
+
+.swipe-cards {
+  position: fixed;
+}
+
+.swipe-card {
+  display: none;
+  position: fixed;
+  -webkit-transform: scale(1,1);
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  margin-top: -150px;
+  box-sizing: border-box;
+  background-color: rgb(255,255,255);
+  border-radius: 4px;
+  overflow: hidden;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.swipe-card .title {
+  height: 40px;
+  padding: 5px;
+  line-height: 30px;
+  color: #444;
+}
+.swipe-card .image {
+  overflow: hidden;
+  max-height: 210px;
+}
+.swipe-card .button {
+  border: none;
+}
+.swipe-card .image img {
+  width: 100%;
+  border-radius: 0px 0px 4px 4px;
+}
+
+#start-card {
+  color: #fff;
+  background-color: #30BD8A;
+  line-height: 300px;
+  word-wrap: break-word;
+  border: 6px solid #4CD68E;
+  text-align: center;
+}
+#start-card span {
+  display: inline-block;
+  line-height: 40px;
+  width: 200px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+#footer .button {
+  color: #fff;
+}
+
+@-webkit-keyframes bounceIn {
+  0% {
+    -webkit-transform: scale(0,0);
+  }
+  70% {
+    -webkit-transform: scale(1.2,1.2);
+  }
+  100% {
+    -webkit-transform: scale(1,1);
+  }
+}
+
+.swipe-card.pop-in-start {
+  -webkit-transform: scale(0,0);
+}
+.swipe-card.pop-in {
+  -webkit-animation: bounceIn 0.4s ease-out;
+}

@@ -1,0 +1,32 @@
+<div class="modal">
+	<div ng-repeat="detail in details">
+		<ion-header-bar class="bar-energized">
+		  <h1 class="title">{{detail.e_name}}</h1>
+		  <button class="button button-icon ion-map" ng-click="openMap({{detail.lat}}, {{detail.lng}})"></button>
+		  <button class="button button-icon ion-chevron-down" ng-click="modal.hide()"></button>
+		</ion-header-bar>
+		<ion-content>
+			<div class="list card">
+			  <div class="item item-avatar">
+			    <img src="http://tutupash.com/site/assets/nin_logo.jpeg">
+			    <p>{{detail.e_description}}</p>
+			    <p class="item item-icon-left">
+			    	<i class="icon ion-ios7-telephone"></i>
+			    	{{detail.telephone}}
+			    </p>
+			    <p class="item item-icon-left assertive">
+			    	<i class="icon ion-home"></i>
+			  		{{detail.address}}
+			  	</p>
+			  	<p>{{detail.city}}, {{detail.country}}</p>
+			  </div>
+
+			  <a class="item item-icon-left assertive" ng-click="onFav({{detail.e_id}})">
+			    <i class="icon ion-star"></i>
+			    Fav 
+			  </a>
+
+			</div>
+		</ion-content>
+	</div>
+</div>

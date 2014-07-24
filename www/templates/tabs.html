@@ -1,0 +1,34 @@
+<!-- 
+  The nav bar that will be updated as we navigate between views.
+-->
+<ion-nav-bar class="bar-positive nav-title-slide-ios7">
+  <ion-nav-back-button class="button-icon icon  ion-ios7-arrow-back"></ion-nav-back-button>
+</ion-nav-bar>
+<!-- 
+  Create tabs with an icon and label, using the tabs-positive style. 
+  Each tab's child <ion-nav-view> directive will have its own 
+  navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top">
+
+  <!-- Historial Tab -->
+  <ion-tab title="Historial" icon="icon ion-bag" href="#/tab/history">
+    <ion-nav-view name="tab-history"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Hearts Tab -->
+  <ion-tab title="Hearts" icon="icon ion-heart" href="#/tab/hearts">
+    <ion-nav-view name="tab-hearts"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Favs Tab -->
+  <ion-tab title="Favs" icon="icon ion-star" href="#/tab/favs">
+    <ion-nav-view name="tab-favs"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Config Tab -->
+  <ion-tab title="Config" icon="icon ion-gear-b" href="#/tab/config">
+    <ion-nav-view name="tab-config"></ion-nav-view>
+  </ion-tab>
+
+</ion-tabs>
